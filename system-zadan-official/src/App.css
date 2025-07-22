@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f3f4f6;
+    color: #111827;
+  }
+
+  /* Style dla komponentów */
+  .card {
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s;
+    border: none;
+    text-decoration: none;
+  }
+
+  .btn-primary {
+    background-color: #4f46e5;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: #4338ca;
+  }
+
+  .btn-secondary {
+    background-color: #e5e7eb;
+    color: #374151;
+  }
+
+  .btn-secondary:hover {
+    background-color: #d1d5db;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box; /* Ważne dla poprawnego wymiarowania */
+  }
+  
+  textarea.input-field {
+    min-height: 80px;
+    resize: vertical;
+  }
+
+  /* Strona logowania */
+  .login-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+  }
+
+  .login-form-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+  
+  .login-form-container h2 {
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  
+  .login-form-container .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .login-form-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .login-form-container .error-message {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+  }
+  
+  .login-form-container .submit-btn {
+    width: 100%;
+  }
+
+  /* Nawigacja */
+  .navbar {
+    background-color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
+  }
+  
+  .navbar h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  
+  .navbar .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .user-info span {
+    margin-right: 1rem;
+  }
+  
+  .navbar .user-info .username {
+    font-weight: 600;
+  }
+  
+  /* Panel główny */
+  .main-content {
+    padding: 2rem;
+  }
+  
+  .dashboard-nav {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+  }
+  
+  .dashboard-nav button {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #6b7280;
+  }
+  
+  .dashboard-nav button.active {
+    color: #4f46e5;
+    border-bottom: 2px solid #4f46e5;
+  }
+
+  /* Widok zadań */
+  .task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .task-header h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .task-details p {
+    margin: 0.25rem 0;
+    color: #6b7280;
+  }
+  
+  .task-details .assigned-to {
+    font-weight: 500;
+    color: #374151;
+  }
+  
+  .comments-section h4, .add-comment-section h4 {
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .comment {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .comment .comment-author {
+    font-weight: 700;
+    font-size: 0.875rem;
+  }
+  
+  .status-ważne {
+    border-left: 4px solid #ef4444;
+    padding-left: 1rem;
+    background-color: #fee2e2;
+  }
+
+  .status-normal {
+     border-left: 4px solid #d1d5db;
+     padding-left: 1rem;
+  }
+  
+  .important-checkbox {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+  }
+  
+  .important-checkbox input {
+    margin-right: 0.5rem;
+  }
+  
+  /* Zarządzanie użytkownikami */
+  .user-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .user-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .user-list-item > span:first-child {
+    flex-basis: 40%; 
+  }
+  
+  .user-list-item:last-child {
+    border-bottom: none;
+  }
+  
+  .user-list-item .role {
+    color: #6b7280;
+    flex-basis: 40%;
+  }
+
+  .user-list-item > button {
+    margin-left: auto;
+  }
